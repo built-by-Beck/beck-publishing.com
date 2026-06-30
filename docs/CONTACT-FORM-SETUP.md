@@ -49,7 +49,7 @@ No API keys or `.env` variables needed.
 
 ## Fallback
 
-If both embed URLs are empty, the site shows a **mailto** link to `david@beck-publishing.com`.
+If both embed URLs are empty, the site shows a **mailto** link to `davidbeck@beck-publishing.com`.
 
 ## Note on styling
 

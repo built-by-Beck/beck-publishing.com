@@ -2,7 +2,7 @@ export const siteConfig = {
   siteName: "Beck-Publishing",
   builderBrand: "Built By Beck",
   ownerName: "David Beck",
-  email: "david@beck-publishing.com",
+  email: "davidbeck@beck-publishing.com",
   siteUrl: "https://beck-publishing.com",
   primaryGoal: "Open to full-time roles and independent project work.",
   footerTagline: "Books • Websites • Apps • Automation • Digital Products",
