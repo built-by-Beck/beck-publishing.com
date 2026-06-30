@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Beck-Publishing.com
 
-## Getting Started
+Modern React/TypeScript website for **Beck-Publishing** and **Built By Beck** — David Beck's books, software projects, SaaS apps, and technical services.
 
-First, run the development server:
+## Stack
+
+- Next.js (App Router, static export)
+- TypeScript
+- Tailwind CSS
+- Lucide React icons
+
+## Local development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
+pnpm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Configure the free contact form in `src/data/site.ts` — see [docs/CONTACT-FORM-SETUP.md](docs/CONTACT-FORM-SETUP.md).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open [http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Build
 
-## Learn More
+```bash
+pnpm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Static output is written to `out/` — deploy that folder to any static host.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy options
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Hostinger
 
-## Deploy on Vercel
+1. Run `npm run build`
+2. Upload contents of `out/` to `public_html` via hPanel File Manager or FTP
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Firebase Hosting
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Install Firebase CLI: `npm install -g firebase-tools`
+2. Update `.firebaserc` with your Firebase project ID
+3. Run `npm run build && firebase deploy --only hosting`
+
+### GitHub Pages
+
+Enable the deploy job in `.github/workflows/deploy.yml` (commented instructions inside).
+
+## Configuration
+
+| File | Purpose |
+|------|---------|
+| `src/data/site.ts` | Site identity, Silent Bones URLs, Google/Microsoft Form embed URL |
+| `docs/CONTACT-FORM-SETUP.md` | Free contact form setup (Google or Microsoft) |
+| `src/data/books.ts` | Book catalog |
+| `src/data/projects.ts` | Project portfolio |
+| `src/data/services.ts` | Service offerings |
+
+### Audiobook setup
+
+See [docs/AUDIOBOOK-SETUP.md](docs/AUDIOBOOK-SETUP.md) for configuring audiobook purchase URL, format, and provider.
+
+### Media assets
+
+Drop images into `public/media/` — see [public/media/README.md](public/media/README.md).
+
+## Pages
+
+- `/` — Homepage
+- `/books/` — Books catalog
+- `/books/silent-bones/` — Silent Bones sales page
+- `/projects/` — Project portfolio
+- `/projects/[slug]/` — Project detail
+- `/services/` — Services
+- `/about/` — About David Beck
+- `/hire-me/` — Hire Me / resume-style page
+- `/contact/` — Contact form
+
+## GitHub
+
+Repository: [github.com/built-by-Beck/beck-publishing.com](https://github.com/built-by-Beck/beck-publishing.com)
+
+```bash
+git remote add origin https://github.com/built-by-Beck/beck-publishing.com.git
+git push -u origin main
+```
