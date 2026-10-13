@@ -173,7 +173,6 @@ export default function SilentBonesPage() {
       <CTASection
         title="Questions about Silent Bones?"
         subtitle="Book, audiobook, or publishing inquiries — get in touch."
-        defaultInquiryType="Book / Audiobook Question"
       />
     </>
   );

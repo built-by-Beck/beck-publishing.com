@@ -5,7 +5,6 @@ import { siteConfig } from "@/data/site";
 import { cn } from "@/lib/utils";
 
 type ContactFormProps = {
-  defaultInquiryType?: string;
   compact?: boolean;
   className?: string;
 };

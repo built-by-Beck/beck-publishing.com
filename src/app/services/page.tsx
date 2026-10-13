@@ -44,13 +44,13 @@ export default function ServicesPage() {
             ))}
           </div>
           <div className="mt-10 text-center">
-            <Link href="/contact/?type=freelance" className="btn-primary">
+            <Link href="/contact/" className="btn-primary">
               Start a project
             </Link>
           </div>
         </div>
       </div>
-      <CTASection defaultInquiryType="Freelance Project" />
+      <CTASection />
     </>
   );
 }

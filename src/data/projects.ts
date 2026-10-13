@@ -5,6 +5,7 @@ export type ProjectStatus =
   | "In Development"
   | "Prototype"
   | "Infrastructure Paused"
+  | "Coming Soon"
   | "Planned"
   | "Published / Available Now";
 
@@ -93,7 +94,7 @@ export const projects: Project[] = [
     shortDescription:
       "Inventory platform for die-cast car collectors.",
     fullDescription:
-      "A collector-focused inventory platform for die-cast cars that helps users track what they own, what they need, duplicates, photos, lists, and collection progress.",
+      "I built DieCastList for my friend Keith, a guy I used to work with at the hospital who loved Hot Wheels. It's a collector-focused inventory platform for die-cast cars that helps users track what they own, what they need, duplicates, photos, lists, and collection progress.",
     problemSolved:
       "Collectors need a simple way to track owned items, wish lists, duplicates, and collection progress without spreadsheets or generic inventory tools.",
     whatBuilt: [
@@ -215,12 +216,12 @@ export const projects: Project[] = [
     name: "YouCantSeeMeVPN.com",
     slug: "youcantseemevpn",
     type: "Privacy / VPN SaaS Concept",
-    status: "Infrastructure Paused",
+    status: "Coming Soon",
     category: "Privacy / VPN SaaS",
     shortDescription:
-      "Privacy-focused VPN platform concept built around WireGuard and subscription access.",
+      "Privacy-focused VPN platform built around WireGuard and subscription access. Currently offline; coming soon.",
     fullDescription:
-      "A privacy-focused VPN platform concept built around WireGuard, Linux servers, subscription access, customer onboarding, and simple secure internet access for everyday users. The live infrastructure is currently paused while server costs are being evaluated, but the project demonstrates VPN architecture, SaaS planning, DNS setup, server deployment, and security-focused product design.",
+      "A privacy-focused VPN platform concept built around WireGuard, Linux servers, subscription access, customer onboarding, and simple secure internet access for everyday users. YouCantSeeMeVPN is currently offline and coming soon. The source repository is private. The project demonstrates VPN architecture, SaaS planning, DNS setup, server deployment, and security-focused product design.",
     problemSolved:
       "Everyday users need straightforward, privacy-focused internet access without enterprise VPN complexity.",
     whatBuilt: [
@@ -237,7 +238,6 @@ export const projects: Project[] = [
       "DNS and domain setup",
       "Security-focused branding",
     ],
-    url: "https://youcantseemevpn.com",
     image: {
       logo: "/media/projects/youcantseemevpn/logo_final_optimized.jpg",
       hero: "/media/projects/youcantseemevpn/logo-hero.jpg",

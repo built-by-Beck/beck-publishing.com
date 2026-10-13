@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Headphones } from "lucide-react";
+import { Download, Headphones } from "lucide-react";
 
 type AudioSamplePlayerProps = {
   sampleUrl: string;
@@ -34,12 +34,22 @@ export function AudioSamplePlayer({
         controls
         preload="metadata"
         className="w-full"
-        onLoadedData={() => setLoaded(true)}
+        onLoadedMetadata={() => setLoaded(true)}
         onError={() => setAvailable(false)}
       >
         <source src={sampleUrl} type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
+      {loaded && (
+        <a
+          href={sampleUrl}
+          download="silent-bones-audiobook-sample.mp3"
+          className="btn-secondary mt-4 inline-flex items-center gap-2 text-sm"
+        >
+          <Download className="h-4 w-4" />
+          Download Audio Sample (MP3)
+        </a>
+      )}
     </div>
   );
 }

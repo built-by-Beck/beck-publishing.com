@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ProjectGrid } from "@/components/projects/ProjectCard";
 import { SkillBadge } from "@/components/ui/Badge";
@@ -8,7 +7,6 @@ import { FeatureCard } from "@/components/services/ServiceCard";
 import { AuthorPhoto } from "@/components/shared/AuthorPhoto";
 import { getFeaturedProjects } from "@/data/projects";
 import { siteConfig } from "@/data/site";
-import { HireMeForm } from "./HireMeForm";
 
 export const metadata: Metadata = {
   title: "Hire David Beck",
@@ -118,9 +116,7 @@ export default function HireMePage() {
             title="Get in Touch"
             subtitle={`Recruiters and hiring managers — reach out at ${siteConfig.email} or use the form below.`}
           />
-          <Suspense fallback={<ContactForm defaultInquiryType="Hiring / Recruiting" />}>
-            <HireMeForm />
-          </Suspense>
+          <ContactForm />
         </div>
       </div>
     </>

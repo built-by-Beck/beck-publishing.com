@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import { Mail } from "lucide-react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { siteConfig } from "@/data/site";
-import { ContactFormWrapper } from "./ContactFormWrapper";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -61,9 +59,7 @@ export default function ContactPage() {
         </div>
 
         <div id="form" className="scroll-mt-24">
-          <Suspense fallback={<ContactForm />}>
-            <ContactFormWrapper />
-          </Suspense>
+          <ContactForm />
         </div>
 
         <div className="mt-10 text-center">

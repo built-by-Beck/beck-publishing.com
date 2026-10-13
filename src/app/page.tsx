@@ -28,7 +28,6 @@ export default function HomePage() {
         subtitle="Beck-Publishing is the home base for David Beck's books, software projects, SaaS ideas, AI tools, websites, and technical problem-solving."
         buttons={[
           { label: "See My Work", href: "/projects/", variant: "primary" },
-          { label: "More from Built By Beck", href: "/projects/", variant: "secondary" },
           { label: "Buy Silent Bones", href: "/books/silent-bones/", variant: "ghost" },
         ]}
       />
