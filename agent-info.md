@@ -27,7 +27,7 @@ Greenfield Next.js 16 static export site for beck-publishing.com.
 
 ## Handoff notes
 
-- Hero CTAs: See My Work, More from Built By Beck, Buy Silent Bones
+- Hero CTAs: See My Work, Buy Silent Bones
 - Contact form embeds **free Google or Microsoft Form** — configure in `src/data/site.ts` (see `docs/CONTACT-FORM-SETUP.md`)
 - Audiobook purchase: configure in `siteConfig.silentBones.audiobook` — see `docs/AUDIOBOOK-SETUP.md`
 - `/projects/silent-bones/` client-redirects to `/books/silent-bones/`

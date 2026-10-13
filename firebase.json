@@ -1,18 +1,14 @@
 {
   "hosting": {
     "public": "out",
+    "cleanUrls": false,
+    "trailingSlash": true,
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "redirects": [
       {
         "source": "/projects/silent-bones",
         "destination": "/books/silent-bones/",
         "type": 301
-      }
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
       }
     ]
   }
