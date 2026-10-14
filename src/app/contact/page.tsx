@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Mail } from "lucide-react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ContactForm } from "@/components/contact/ContactForm";
@@ -48,6 +49,14 @@ export default function ContactPage() {
           align="center"
         />
 
+        <p className="mb-8 text-sm text-zinc-400">
+          Need help with an existing purchase?{" "}
+          <Link href="/support/" className="font-medium text-violet-400 hover:text-violet-300">
+            Visit Customer Support
+          </Link>
+          .
+        </p>
+
         <div className="mb-10 grid gap-4 sm:grid-cols-2">
           {inquiryCategories.map((cat) => (
             <div key={cat.title} className="glass-card rounded-lg p-4">
@@ -60,6 +69,11 @@ export default function ContactPage() {
 
         <div id="form" className="scroll-mt-24">
           <ContactForm />
+          <p className="mt-4 text-xs text-zinc-500">
+            Learn how your information is handled in our{" "}
+            <Link href="/privacy/" className="text-violet-400 hover:text-violet-300">Privacy Policy</Link>
+            .
+          </p>
         </div>
 
         <div className="mt-10 text-center">

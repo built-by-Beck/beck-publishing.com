@@ -83,18 +83,31 @@ export default function SilentBonesPage() {
             subtitle={
               audiobookReady
                 ? "Listen to a sample, then purchase the full audiobook."
-                : "The audiobook version is being prepared for release. Check back soon for purchase options."
+                : "Listen to a free Chapter 1 excerpt. Full audiobook purchase options are coming soon."
             }
           />
           <div className="grid gap-10 lg:grid-cols-2">
-            <div className="relative mx-auto aspect-[2/3] w-full max-w-xs overflow-hidden rounded-xl">
-              <MediaImage
-                src={book.audiobookCoverImage}
-                alt={`${book.title} audiobook cover`}
-                label="Audiobook"
-                fill
-                sizes="320px"
-              />
+            <div className="mx-auto grid w-full max-w-lg grid-cols-2 gap-4 self-start">
+              {[
+                { src: book.coverImage, label: "Front cover" },
+                { src: book.audiobookCoverImage, label: "Back cover" },
+              ].map((cover) => (
+                <figure key={cover.label}>
+                  <div className="relative aspect-[2/3] overflow-hidden rounded-xl shadow-xl">
+                    <MediaImage
+                      src={cover.src}
+                      alt={`${book.title} — ${cover.label.toLowerCase()}`}
+                      label={cover.label}
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 640px) 44vw, 240px"
+                    />
+                  </div>
+                  <figcaption className="mt-3 text-center text-sm text-zinc-400">
+                    {cover.label}
+                  </figcaption>
+                </figure>
+              ))}
             </div>
             <div className="space-y-6">
               <StatusBadge status={book.audiobook.status} />
@@ -111,8 +124,9 @@ export default function SilentBonesPage() {
                 </p>
               )}
               <p className="text-sm leading-relaxed text-zinc-400">
-                The audiobook edition of Silent Bones is being prepared as a separate
-                digital release for readers who want to experience the story in audio form.
+                Preview Chapter 1, “The Silence Between Bones.” You can listen to
+                or download this short excerpt for free. The full audiobook and
+                ebook require purchase.
               </p>
               {book.audiobook.sampleUrl && (
                 <AudioSamplePlayer sampleUrl={book.audiobook.sampleUrl} />

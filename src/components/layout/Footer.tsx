@@ -44,6 +44,18 @@ export function Footer() {
             >
               {siteConfig.email}
             </a>
+            <Link
+              href="/support/"
+              className="mt-4 block text-sm text-zinc-400 transition hover:text-violet-300"
+            >
+              Customer Support
+            </Link>
+            <Link
+              href="/privacy/"
+              className="mt-2 block text-sm text-zinc-400 transition hover:text-violet-300"
+            >
+              Privacy Policy
+            </Link>
           </div>
         </div>
         <div className="mt-10 border-t border-white/5 pt-6 text-center text-xs text-zinc-600">

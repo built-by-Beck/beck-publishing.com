@@ -38,7 +38,7 @@ export const siteConfig = {
       priceDisplay: "",
       sampleUrl: "/media/books/silent-bones/audiobook-sample.mp3",
       deliveryNote:
-        "Full audiobook delivered through secure checkout — not hosted on this site.",
+        "Only the preview is free. The full audiobook requires purchase; checkout details are coming soon.",
     },
   },
   contactForm: {

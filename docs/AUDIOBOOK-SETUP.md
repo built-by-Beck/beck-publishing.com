@@ -2,7 +2,12 @@
 
 When you're ready to sell the audiobook, update **`src/data/site.ts`** — no component changes needed.
 
-## 1. Add a sample clip (optional)
+## 1. Public sample clip
+
+The site includes an approximately three-minute opening excerpt from Chapter 1,
+“The Silence Between Bones,” taken from David's supplied ElevenLabs MP3.
+Only this excerpt is included in the website; the original chapter stays outside
+the repository. The sample section displays the front and back covers together.
 
 Place a short preview file at:
 
@@ -10,16 +15,19 @@ Place a short preview file at:
 public/media/books/silent-bones/audiobook-sample.mp3
 ```
 
-Recommended sample: 3–5 minutes, exported as an MP3 at 128 kbps
-(approximately 3–5 MB; five minutes is about 4.8 MB). Choose an excerpt
-that introduces the story without revealing major spoilers.
+The current sample preserves the original MP3 frames without re-encoding and
+is approximately 2.9 MB. If replacing it, keep the excerpt short and update the
+player's duration label if needed.
 
-The audiobook player displays a **Download Audio Sample (MP3)** button once
+The audiobook player displays a **Download Free Preview (MP3)** button once
 the file's metadata loads. If the file is missing or cannot be played,
-visitors see “Audio sample coming soon” instead. Add the actual narrated
-clip at the path above, then rebuild and deploy to enable the download.
+visitors see a temporary-unavailability message instead. Rebuild and deploy
+after replacing the sample file.
 
 **Do not** put the full audiobook in `public/`. Only the sample clip belongs here.
+The full ebook also belongs with its paid retailer or fulfillment provider,
+never in the public website export. The ebook currently links to Amazon;
+audiobook checkout still needs a real purchase URL before it can be enabled.
 
 ## 2. Configure purchase in site.ts
 
