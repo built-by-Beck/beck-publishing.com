@@ -3,7 +3,11 @@
     "public": "out",
     "cleanUrls": false,
     "trailingSlash": true,
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
     "redirects": [
       {
         "source": "/projects/silent-bones",
