@@ -57,7 +57,11 @@ export const projects: Project[] = [
       "Creative product development",
     ],
     url: "https://dope-warz.com",
-    image: {},
+    image: {
+      logo: "/media/projects/dope-warz/dope-warz-cover.webp",
+      hero: "/media/projects/dope-warz/dope-warz-cover.webp",
+      screenshots: ["/media/projects/dope-warz/dope-warz-cover.webp"],
+    },
     badges: ["Game Development", "Game Remake", "Nostalgia", "Passion Project"],
     featured: false,
     homepagePriority: 7,
