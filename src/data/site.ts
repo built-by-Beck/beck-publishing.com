@@ -4,7 +4,8 @@ export const siteConfig = {
   ownerName: "David Beck",
   email: "davidbeck@beck-publishing.com",
   siteUrl: "https://beck-publishing.com",
-  primaryGoal: "Open to full-time roles and independent project work.",
+  primaryGoal:
+    "Open to full-time roles in development and IT support, and available now for freelance and contract work.",
   footerTagline: "Books • Websites • Apps • Automation • Digital Products",
   authorPhoto: "/media/davidbeck.jpg",
   logos: {

@@ -18,8 +18,8 @@
 
 **Fix:** Dedicated `/projects/silent-bones/` page with client-side redirect to `/books/silent-bones/`, plus Firebase Hosting redirect in `firebase.json`.
 
-## App Hosting outage from unpaid billing (2026-10)
+## Static hosting over App Hosting (2026-10)
 
-**What happened:** The site ran on Firebase App Hosting (Blaze-only). When the Firebase billing account went unpaid, every page returned 503 even though the code built fine.
+**What happened:** The site briefly ran on Firebase App Hosting, which requires the paid Blaze plan, even though every page is static.
 
-**Fix:** Switched back to `output: "export"` and free Firebase Hosting (`firebase deploy --only hosting`). Every page is static, so App Hosting added cost and billing risk without any benefit. `redirects()` was removed from `next.config.ts` (unsupported in export); the redirect lives in `firebase.json` again.
+**Fix:** Switched back to `output: "export"` and free Firebase Hosting (`firebase deploy --only hosting`). App Hosting added cost without any benefit for a fully static site. `redirects()` was removed from `next.config.ts` (unsupported in export); the redirect lives in `firebase.json` again.

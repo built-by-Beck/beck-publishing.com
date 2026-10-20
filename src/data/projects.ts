@@ -4,7 +4,7 @@ export type ProjectStatus =
   | "Live"
   | "In Development"
   | "Prototype"
-  | "Infrastructure Paused"
+  | "Retired"
   | "Coming Soon"
   | "Planned"
   | "Published / Available Now";
@@ -35,6 +35,33 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    name: "Dope-Warz.com",
+    slug: "dope-warz",
+    type: "Game Remake",
+    status: "Live",
+    category: "Games / Nostalgia",
+    shortDescription:
+      "A remake of a game I played as a kid, rebuilt as a personal passion project.",
+    fullDescription:
+      "Dope-Warz is my remake of a game I played as a kid. It's a personal passion project that brings a childhood favorite into my own collection of games, websites, and digital products.",
+    problemSolved:
+      "Revisiting a childhood favorite through a new remake of the game.",
+    whatBuilt: [
+      "A game remake project under the Dope-Warz.com name",
+      "A personal take on a game I grew up playing",
+    ],
+    whatItProves: [
+      "Game development",
+      "Turning personal interests into digital projects",
+      "Creative product development",
+    ],
+    url: "https://dope-warz.com",
+    image: {},
+    badges: ["Game Development", "Game Remake", "Nostalgia", "Passion Project"],
+    featured: false,
+    homepagePriority: 7,
+  },
   {
     name: "ExtinguisherTracker.com",
     slug: "extinguisher-tracker",
@@ -94,7 +121,7 @@ export const projects: Project[] = [
     shortDescription:
       "Inventory platform for die-cast car collectors.",
     fullDescription:
-      "I built DieCastList for my friend Keith, a guy I used to work with at the hospital who loved Hot Wheels. It's a collector-focused inventory platform for die-cast cars that helps users track what they own, what they need, duplicates, photos, lists, and collection progress.",
+      "I built DieCastList for a collector friend who needed a better way to manage a large Hot Wheels collection. It's a collector-focused inventory platform for die-cast cars that helps users track what they own, what they need, duplicates, photos, lists, and collection progress.",
     problemSolved:
       "Collectors need a simple way to track owned items, wish lists, duplicates, and collection progress without spreadsheets or generic inventory tools.",
     whatBuilt: [
@@ -137,20 +164,20 @@ export const projects: Project[] = [
     shortDescription:
       "Coin collecting education focused on error coins and valuable varieties.",
     fullDescription:
-      "A coin collecting education website focused on error coins, valuable varieties, beginner guides, SEO-driven collecting content, and affiliate-style monetization opportunities.",
+      "A coin collecting education website focused on error coins, valuable varieties, beginner guides, and SEO-driven collecting content.",
     problemSolved:
       "Collectors searching for error coin information need clear, research-backed guides instead of scattered forum posts and outdated references.",
     whatBuilt: [
       "WordPress publishing site with SEO-focused content structure",
       "Beginner guides and error coin education pages",
-      "Affiliate and monetization planning integrated into content strategy",
       "Niche research workflow for coin varieties and values",
+      "Affiliate partnerships integrated into the content strategy",
     ],
     whatItProves: [
       "SEO strategy",
       "Niche content creation",
       "WordPress publishing",
-      "Affiliate marketing planning",
+      "Content site management",
       "Coin research and education",
     ],
     url: "https://richofferrorcoins.com",
@@ -177,24 +204,24 @@ export const projects: Project[] = [
     name: "ValuableCoinList.com",
     slug: "valuable-coin-list",
     type: "Coin Research / Content Website",
-    status: "Planned",
+    status: "Live",
     category: "Coin Research Website",
     shortDescription:
-      "Coin value and research site planned as part of the Beck-Publishing coin network.",
+      "Coin value and research site in the Beck-Publishing coin network.",
     fullDescription:
-      "A coin value and research website planned as part of the Beck-Publishing coin content network. The goal is to create helpful pages around valuable coins, collectible varieties, beginner-friendly coin lists, and research tools.",
+      "A coin value and research website in the Beck-Publishing coin content network, with helpful pages on valuable coins, collectible varieties, beginner-friendly coin lists, and research tools.",
     problemSolved:
-      "Collectors need a structured, searchable reference for valuable coins and varieties — planned as part of a broader content network.",
+      "Collectors need a structured, searchable reference for valuable coins and varieties.",
     whatBuilt: [
-      "Content network architecture and page planning",
+      "Content network architecture and page structure",
       "SEO keyword and topic research for coin value queries",
-      "Monetizable page templates for lists and research tools",
+      "Reusable page templates for coin lists and research tools",
     ],
     whatItProves: [
-      "Content network planning",
+      "Content network architecture",
       "Niche SEO strategy",
       "Research-based publishing",
-      "Monetizable website planning",
+      "Multi-site content management",
     ],
     url: "https://valuablecoinlist.com",
     image: {
@@ -215,25 +242,25 @@ export const projects: Project[] = [
   {
     name: "YouCantSeeMeVPN.com",
     slug: "youcantseemevpn",
-    type: "Privacy / VPN SaaS Concept",
-    status: "Coming Soon",
+    type: "Privacy / VPN SaaS",
+    status: "Retired",
     category: "Privacy / VPN SaaS",
     shortDescription:
-      "Privacy-focused VPN platform built around WireGuard and subscription access. Currently offline; coming soon.",
+      "Privacy-focused VPN service built on WireGuard and Linux servers, with subscription access.",
     fullDescription:
-      "A privacy-focused VPN platform concept built around WireGuard, Linux servers, subscription access, customer onboarding, and simple secure internet access for everyday users. YouCantSeeMeVPN is currently offline and coming soon. The source repository is private. The project demonstrates VPN architecture, SaaS planning, DNS setup, server deployment, and security-focused product design.",
+      "A privacy-focused VPN service built around WireGuard, Linux servers, subscription access, customer onboarding, and simple secure internet access for everyday users. YouCantSeeMeVPN ran on VPN nodes I deployed and managed on rented Linux servers; the nodes have since been decommissioned. The project covered VPN architecture, server deployment, DNS setup, and security-focused product design.",
     problemSolved:
       "Everyday users need straightforward, privacy-focused internet access without enterprise VPN complexity.",
     whatBuilt: [
-      "WireGuard VPN server deployment on Linux",
+      "WireGuard VPN nodes deployed and managed on Linux servers",
       "DNS and domain configuration for client onboarding",
-      "Subscription access model with Stripe integration planning",
-      "React/TypeScript customer-facing portal concept",
+      "Subscription access model and customer onboarding flow",
+      "React/TypeScript customer-facing portal design",
     ],
     whatItProves: [
-      "Server infrastructure understanding",
-      "VPN architecture basics",
-      "Linux deployment planning",
+      "Server infrastructure and administration",
+      "VPN architecture",
+      "Linux server deployment",
       "Subscription product thinking",
       "DNS and domain setup",
       "Security-focused branding",

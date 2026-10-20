@@ -26,11 +26,10 @@ export default function AboutPage() {
         </div>
         <div className="space-y-6 leading-relaxed text-zinc-400">
           <p>
-            I&apos;m David Beck — based in Alabama, working in life safety by day and building
-            software, websites, SaaS products, books, and digital brands in every spare hour I
-            can find. I didn&apos;t come up through a traditional CS program. I learned by fixing
-            things that were broken, reading documentation until it made sense, and shipping
-            projects until they worked.
+            I&apos;m David Beck — based in Alabama, with a background in life safety and a
+            track record of building software, websites, SaaS products, books, and digital
+            brands. I&apos;m self-taught: I learned by fixing things that were broken, reading
+            documentation until it made sense, and shipping projects until they worked.
           </p>
           <p>
             My background is practical: maintenance work, electronics troubleshooting, computer
@@ -51,8 +50,16 @@ export default function AboutPage() {
           <p>
             I&apos;m interested in web apps, automation, AI tools, SaaS products, infrastructure,
             publishing, and creative technology. I build practical tools — inspection trackers,
-            inventory apps, content sites, VPN concepts, author platforms — because I like
+            inventory apps, content sites, a VPN service, author platforms — because I like
             solving problems that matter to someone.
+          </p>
+          <p>
+            My certifications include Frontend Developer (React), JavaScript (Intermediate),
+            JavaScript (Basic), Python (Basic), and Problem Solving (Basic) from HackerRank,
+            plus the Google IT Support Professional Certificate.{' '}
+            <Link href="/hire-me/#certifications" className="text-violet-400 hover:text-violet-300">
+              View my certifications and verification links →
+            </Link>
           </p>
           <p className="border-t border-white/5 pt-6 text-zinc-300">
             {siteConfig.primaryGoal}{" "}

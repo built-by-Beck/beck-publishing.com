@@ -113,7 +113,7 @@ export default async function ProjectDetailPage({ params }: Props) {
               <p className="text-zinc-400">{project.problemSolved}</p>
             </div>
             <div>
-              <SectionHeader title="What I Built or Planned" />
+              <SectionHeader title="What I Built" />
               <ul className="space-y-2">
                 {project.whatBuilt.map((item) => (
                   <li key={item} className="flex gap-3 text-zinc-400">

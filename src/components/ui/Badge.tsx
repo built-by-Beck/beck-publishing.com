@@ -22,7 +22,7 @@ const statusStyles: Record<string, string> = {
   Live: "border-emerald-500/30 bg-emerald-500/10 text-emerald-300",
   "In Development": "border-amber-500/30 bg-amber-500/10 text-amber-300",
   Prototype: "border-blue-500/30 bg-blue-500/10 text-blue-300",
-  "Infrastructure Paused": "border-zinc-500/30 bg-zinc-500/10 text-zinc-300",
+  Retired: "border-zinc-500/30 bg-zinc-500/10 text-zinc-300",
   Planned: "border-violet-500/30 bg-violet-500/10 text-violet-300",
   "Published / Available Now":
     "border-emerald-500/30 bg-emerald-500/10 text-emerald-300",

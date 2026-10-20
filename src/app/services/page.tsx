@@ -17,7 +17,7 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-6xl">
           <SectionHeader
             title="Services"
-            subtitle="Websites, apps, automation, and technical work — built for businesses, authors, and side hustles."
+            subtitle="Available now for freelance and contract work — one-time projects or ongoing support, with flexible hours. Websites, apps, automation, and IT work for businesses, authors, and side hustles."
           />
           <div className="grid gap-6 md:grid-cols-2">
             {services.map((service) => (

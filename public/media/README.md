@@ -16,7 +16,7 @@ Drop image and audio files here. The site uses graceful placeholders when files 
 
 - `beck-pub-logo-round.png` — round Beck-Publishing logo (navbar)
 - `beck-pub-keyboard-logo-hero.png` — hero / OG image
-- `beck-publishing-brick.jpg`, `bckpub.jpeg` — additional brand assets
+- `beck-publishing-brick.jpg` — additional brand asset
 
 ## Silent Bones (`books/silent-bones/`)
 

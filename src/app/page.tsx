@@ -25,7 +25,7 @@ export default function HomePage() {
             <span className="gradient-text">Built By Beck.</span>
           </>
         }
-        subtitle="Beck-Publishing is the home base for David Beck's books, software projects, SaaS ideas, AI tools, websites, and technical problem-solving."
+        subtitle="Beck-Publishing is the home base for David Beck's books, software projects, SaaS products, AI tools, websites, and technical problem-solving."
         buttons={[
           { label: "See My Work", href: "/projects/", variant: "primary" },
           { label: "Buy Silent Bones", href: "/books/silent-bones/", variant: "ghost" },
@@ -55,7 +55,7 @@ export default function HomePage() {
           <SectionHeader
             eyebrow="Services"
             title="What I Build for Clients"
-            subtitle="Websites, apps, automation, and technical problem-solving."
+            subtitle="Websites, apps, automation, and technical problem-solving — available now for freelance and contract work."
           />
           <div className="grid gap-6 md:grid-cols-3">
             {services.map((service) => (
@@ -101,7 +101,8 @@ export default function HomePage() {
       <section className="border-t border-white/5 bg-violet-500/5 py-8">
         <div className="mx-auto max-w-6xl px-6 text-center">
           <p className="text-zinc-300">
-            Open to full-time roles and freelance projects.{" "}
+            Open to full-time roles in development and IT support, and available now for
+            freelance and contract work.{" "}
             <Link href="/hire-me/" className="font-semibold text-violet-400 hover:text-violet-300">
               View Hire Me →
             </Link>

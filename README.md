@@ -12,38 +12,29 @@ Modern React/TypeScript website for **Beck-Publishing** and **Built By Beck** �
 ## Local development
 
 ```bash
-pnpm install
-pnpm run dev
+npm install
+npm run dev
 ```
-
-Configure the free contact form in `src/data/site.ts` — see [docs/CONTACT-FORM-SETUP.md](docs/CONTACT-FORM-SETUP.md).
 
 Open [http://localhost:3000](http://localhost:3000)
 
 ## Build
 
 ```bash
-pnpm run build
+npm run build
 ```
 
-Static output is written to `out/` — deploy that folder to any static host.
+Static output is written to `out/`.
 
-## Deploy options
+## Deployment
 
-### Hostinger
+Pushes to `main` are built and deployed to Firebase Hosting automatically by GitHub Actions (`.github/workflows/firebase-hosting-merge.yml`). Pull requests get a preview channel (`firebase-hosting-pull-request.yml`), and `deploy.yml` runs lint and build checks.
 
-1. Run `npm run build`
-2. Upload contents of `out/` to `public_html` via hPanel File Manager or FTP
+To deploy manually:
 
-### Firebase Hosting
-
-1. Install Firebase CLI: `npm install -g firebase-tools`
-2. Update `.firebaserc` with your Firebase project ID
-3. Run `npm run build && firebase deploy --only hosting`
-
-### GitHub Pages
-
-Enable the deploy job in `.github/workflows/deploy.yml` (commented instructions inside).
+```bash
+npm run build && firebase deploy --only hosting
+```
 
 ## Configuration
 
@@ -78,8 +69,3 @@ Drop images into `public/media/` — see [public/media/README.md](public/media/R
 ## GitHub
 
 Repository: [github.com/built-by-Beck/beck-publishing.com](https://github.com/built-by-Beck/beck-publishing.com)
-
-```bash
-git remote add origin https://github.com/built-by-Beck/beck-publishing.com.git
-git push -u origin main
-```

@@ -64,15 +64,15 @@ export const services: Service[] = [
     ctaLabel: "Review my WordPress site",
   },
   {
-    name: "Computer & Electronics Troubleshooting",
+    name: "IT & Technical Support",
     slug: "tech-troubleshooting",
     shortDescription:
-      "Hands-on tech help — device setup, repair guidance, and practical problem solving.",
+      "Hands-on IT help — device and network setup, hardware troubleshooting, and practical problem solving.",
     audience:
-      "Anyone who needs practical hands-on tech help, device setup, repair guidance, and problem solving.",
+      "Individuals and small businesses that need reliable IT support, device and network setup, and hardware troubleshooting.",
     whyItMatters:
       "Tech problems are frustrating when nobody explains them clearly. I troubleshoot systematically and communicate in plain language.",
-    ctaLabel: "Get tech help",
+    ctaLabel: "Get IT support",
   },
   {
     name: "Author / Book Websites",
